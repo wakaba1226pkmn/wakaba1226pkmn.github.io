@@ -24,7 +24,7 @@ li{
 }
 
 .link{
-  margin-top: 5px;
+  margin-top: 30px;
 }
 
 .twitter img{
@@ -33,7 +33,7 @@ li{
 }
 
 .twitter p{
-  padding-bottom: 20px;
+  padding: 0px 0px 10px 50px;
 }
 
 .instagram img{
@@ -42,10 +42,14 @@ li{
 }
 
 .instagram p{
-  padding-bottom: 20px;
+  padding: 0px 0px 10px 40px;
 }
 
 .footer{
   background-color: #2f5167;
-  height: 20px;
+  height: 150px;
+}
+
+.mail{
+  padding: 10px 10px;
 }

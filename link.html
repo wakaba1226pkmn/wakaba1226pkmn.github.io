@@ -1,3 +1,4 @@
+<!-- リンク画面 -->
 <!DOCTYPE html>
 <p>ホームページ製作中　まだ未完成でーす</p>
 <html>
@@ -7,6 +8,8 @@
   <link rel="stylesheet" href="link.css">
   </head>
   <body>
+
+    <!-- ヘッダー -->
     <div class="header">
       <div class="header-logo">Home Page</div>
         <div class="header-list">
@@ -19,8 +22,8 @@
       </div>
     </div>
 
+    <!-- リンク貼るとこ -->
     <div class="link">
-      <p>Link</p>
       <div class="twitter">
         <img src="twitter.jpg">
         <p><a href="https://twitter.com/wakaba_1226">twitter</a></p>
@@ -31,9 +34,18 @@
       </div>
     </div>
 
+    <!-- フッター -->
     <div class="footer">
-
+      <div class="mail">
+        <p>ご意見あればお願いします。</p>
+        <form method="POST" action="mailto:wakaba1226pkmn@yahoo.co.jp">
+        <div>名前: <input type=text name="NAME" size=20></div>
+        <div>感想: <input type="text" name="MSG" size=20></div>
+        <input type="submit" value="  送信  ">
+        <input type="reset"  value="  取消  ">
+        </form>
+      </div>
     </div>
-  </div>
+
 </body>
 </html>

@@ -25,5 +25,9 @@ li{
 
 .footer{
   background-color: #2f5167;
-  height: 20px;
+  height: 150px;
+}
+
+.mail{
+  padding: 10px 10px;
 }

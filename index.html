@@ -1,3 +1,4 @@
+<!-- ホーム画面 -->
 <!DOCTYPE html>
 <p>ホームページ製作中　まだ未完成でーす</p>
 <html>
@@ -7,6 +8,8 @@
   <link rel="stylesheet" href="homepage.css">
   </head>
   <body>
+
+    <!-- ヘッダー -->
     <div class="header">
       <div class="header-logo">Home Page</div>
         <div class="header-list">
@@ -19,23 +22,36 @@
       </div>
     </div>
 
+    <!-- 中の部分 -->
     <div class="main">
       <div class="greeting">
         <h1>WELCOME TO MY HOMEPAGE!</h1>
       </div>
 
-      <div class="contents">
-        <div class="profile">
-          <p>Profile</p>
-          <img src="profile.jpg">
-          <p>わかば</p>
-          <p>1997/12/26　男</p>
-        </div>
-      </div>
-
-      <div class="footer">
-
+      <div class="profile_img">
+        <p>Profile</p>
+        <img src="profile.jpg" align="left">
+        <br>
+        <p>　Nickname：わかば</p>
+        <p>　Birthday：1997/12/26</p>
+        <p>　Sex：♂</p>
+        <p>　Favorite Things：テニス, YouTube</p>
+        <br clear="left">
       </div>
     </div>
+
+    <!-- フッター -->
+    <div class="footer">
+      <div class="mail">
+        <p>ご意見あればお願いします。</p>
+        <form method="POST" action="mailto:wakaba1226pkmn@yahoo.co.jp">
+        <div>名前: <input type=text name="NAME" size=20></div>
+        <div>感想: <input type="text" name="MSG" size=20></div>
+        <input type="submit" value="  送信  ">
+        <input type="reset"  value="  取消  ">
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>

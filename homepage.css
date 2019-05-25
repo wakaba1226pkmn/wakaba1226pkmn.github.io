@@ -31,12 +31,16 @@ li{
   font-size: 10px;
 }
 
-.contents img{
-  height: 150px;
-  width: 150px;
+.profile_img img{
+  height: 200px;
+  width: 200px;
 }
 
 .footer{
   background-color: #2f5167;
-  height: 20px;
+  height: 150px;
+}
+
+.mail{
+  padding: 10px 10px;
 }
