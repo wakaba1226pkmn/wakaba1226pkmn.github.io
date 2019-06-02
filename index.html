@@ -1,68 +1,123 @@
-<!-- ホーム画面 -->
 <!DOCTYPE html>
-<p>ホームページ製作中　まだ未完成でーす</p>
-<html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141255839-1"></script>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>わかばのホームページ</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.scrollshow.js"></script>
+<script type="text/javascript" src="js/jquery.rollover.js"></script>
+<script type="text/javascript" src="js/jquery.slideshow.js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-141255839-1');
+$(function($){
+	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
+	$('.totop').scrollshow({position : 500});
+	$('.slide').slideshow({
+		touch		: true,
+		touchDistance : '80',
+		bgImage	  : false,
+		autoSlide	: true,
+		effect	   : 'slide',
+		repeat	   : true,
+		easing	   : 'swing',
+		interval	 : 3000,
+		duration	 : 500,
+		imgHoverStop : true,
+		navHoverStop : true,
+		navImg	   : false,
+		navImgCustom : false,
+		navImgSuffix : ''
+	});
+	$('.slidePrev img').rollover();
+	$('.slideNext img').rollover();
+	});
 </script>
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="contents">
+	<div id="sub">
+		<header>
+			<h1>わかばの　　　　　ホームページ</h1>
+			<p class="summary">
+			Webページ作成の勉強しながら更新して改善していけたらと思ってまーす。
+			</p>
+		</header>
+		<nav>
+			<h3>メニュー<span id="navBtn"><span id="navBtnIcon"></span></span></h3>
+			<ul>
+				<li><a href="index.html">ホーム</a></li>
+				<li><a href="http://www.mclab.ics.ritsumei.ac.jp">研究室</a></li>
+			</ul>
+		</nav>
+	</div><!-- /#sub -->
+	<div id="main">
+		<div class="slide">
+			<ul class="slideInner">
+				<li><img src="images/photo01.jpg" alt=""></li>
+				<li><img src="images/photo02.jpg" alt=""></li>
+				<li><img src="images/photo03.jpg" alt=""></li>
+			</ul>
+			<div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+			<div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+			<div class="controlNav"></div>
+		</div><!-- /.slide -->
+		<h2>更新情報</h2>
+		<dl class="info">
+		   <dt><span>2019-06-02</span></dt>
+		   <dd>
+				 ホームページのスタイル変更。
+		   </dd>
+		   <dt><span>2019-06-01</span></dt>
+		   <dd>
+				 unityのサンプルゲーム追加。
+		   </dd>
+		</dl>
+		<div class="link">
+			<h3>リンク</h3>
+			<ul>
+				<li>
+				<a href="https://twitter.com/wakaba_1226"><img src="images/twitter.jpg" alt=""></a>
+				<h4>twitter</h4>
+				</li>
+				<li>
+				<a href="https://www.instagram.com/wakaba_1226"><img src="images/instagram.jpg" alt=""></a>
+				<h4>instagram</h4>
+				</li>
+			</ul>
+		</div><!-- /.service -->
+		<div class="staff">
+			<h3>ゲーム（PC上でしかできません。）</h3>
+			<ul>
+				<li>
+				<a href="https://wakaba1226pkmn.github.io/test/"><img src="images/test_game.png" alt=""></a>
+				<h4>バスケット</h4>
+				<p>3✖︎3のマス目をクリックして移動し、りんごを集め爆弾を避けながらスコアを稼ぐ。</p>
+				</li>
 
+			</ul>
+		</div><!-- /.staff -->
+	</div><!-- /#main -->
+</div><!-- /#contents -->
 
-  <meta charset="utf-8">
-  <title>わかばのホームページ</title>
-  <link rel="stylesheet" href="homepage.css">
-  </head>
-  <body>
+<footer>
+	<div class="footmenu">
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="http://www.mclab.ics.ritsumei.ac.jp">LABORATORY</a></li>
+		</ul>
+	</div><!-- /.footmenu -->
+	<div class="copyright">Copyright &#169; 2019 - 2019 SITENAME All Rights Reserved.</div><!-- /.copyright -->
+</footer>
 
-    <!-- ヘッダー -->
-    <div class="header">
-      <div class="header-logo">Home Page</div>
-        <div class="header-list">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="link.html">Link</a></li>
-          <li><a href="game.html">Game</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- 中の部分 -->
-    <div class="main">
-      <div class="greeting">
-        <h1>WELCOME TO MY HOMEPAGE!</h1>
-      </div>
-
-      <div class="profile_img">
-        <p>Profile</p>
-        <img src="profile.jpg" align="left">
-        <br>
-        <p>　Nickname：わかば</p>
-        <p>　Birthday：1997/12/26</p>
-        <p>　Sex：♂</p>
-        <p>　Favorite Things：テニス, YouTube</p>
-        <br clear="left">
-      </div>
-    </div>
-
-    <!-- フッター -->
-    <div class="footer">
-      <div class="mail">
-        <p>ご意見あればお願いします。</p>
-        <form method="POST" action="mailto:wakaba1226pkmn@yahoo.co.jp">
-        <div>名前: <input type=text name="NAME" size=20></div>
-        <div>感想: <input type="text" name="MSG" size=20></div>
-        <input type="submit" value="  送信  ">
-        <input type="reset"  value="  取消  ">
-        </form>
-      </div>
-    </div>
-
-  </body>
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
 </html>
