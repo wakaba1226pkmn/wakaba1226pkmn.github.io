@@ -23,6 +23,15 @@ li{
   padding: 33px 20px;
 }
 
+.warning{
+  font-size: 20px;
+}
+
+.game1_img img{
+  height: 200px;
+  width: 300px;
+}
+
 .footer{
   background-color: #2f5167;
   height: 150px;
