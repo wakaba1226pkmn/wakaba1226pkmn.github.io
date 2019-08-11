@@ -10,7 +10,7 @@ gtag('js', new Date());
 gtag('config', 'UA-141255839-1');
 </script>
 <meta charset="utf-8">
-<title>わかばのホームページ</title>
+<title>日記</title>
 <meta name="viewport" content="width=device-width">
 <meta name="keywords" content="">
 <meta name="description" content="">
@@ -21,30 +21,6 @@ gtag('config', 'UA-141255839-1');
 <script type="text/javascript" src="js/jquery.scrollshow.js"></script>
 <script type="text/javascript" src="js/jquery.rollover.js"></script>
 <script type="text/javascript" src="js/jquery.slideshow.js"></script>
-<script>
-$(function($){
-	$('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
-	$('.totop').scrollshow({position : 500});
-	$('.slide').slideshow({
-		touch		: true,
-		touchDistance : '80',
-		bgImage	  : false,
-		autoSlide	: true,
-		effect	   : 'slide',
-		repeat	   : true,
-		easing	   : 'swing',
-		interval	 : 3000,
-		duration	 : 500,
-		imgHoverStop : true,
-		navHoverStop : true,
-		navImg	   : false,
-		navImgCustom : false,
-		navImgSuffix : ''
-	});
-	$('.slidePrev img').rollover();
-	$('.slideNext img').rollover();
-	});
-</script>
 <!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/css3-mediaqueries.js"></script>
@@ -69,55 +45,13 @@ $(function($){
 		</nav>
 	</div><!-- /#sub -->
 	<div id="main">
-		<div class="slide">
-			<ul class="slideInner">
-				<li><img src="images/photo01.jpg" alt=""></li>
-				<li><img src="images/photo02.jpg" alt=""></li>
-				<li><img src="images/photo03.jpg" alt=""></li>
-			</ul>
-			<div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
-			<div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
-			<div class="controlNav"></div>
-		</div><!-- /.slide -->
-		<h2>更新情報</h2>
+		<h2>目次</h2>
 		<dl class="info">
-			<dt><span>2019-08-10</span></dt>
-			<dd>
-				研究室で勉強していることのメモ。
-			</dd>
-		   <dt><span>2019-06-02</span></dt>
+		   <dt><span><a href="diary/20190810.html">Autoware上のトピック(image_raw)を出力</a>(2019/08/10)</span></dt>
 		   <dd>
-				 ホームページのスタイル変更。
-		   </dd>
-			 <dt><span>2019-06-01</span></dt>
-		   <dd>
-				 unityのサンプルゲーム追加。
+				 画像データのトピックをプログラムで出力する。
 		   </dd>
 		</dl>
-		<div class="link">
-			<h3>リンク</h3>
-			<ul>
-				<li>
-				<a href="https://twitter.com/wakaba_1226"><img src="images/twitter.jpg" alt=""></a>
-				<h4>twitter</h4>
-				</li>
-				<li>
-				<a href="https://www.instagram.com/wakaba_1226"><img src="images/instagram.jpg" alt=""></a>
-				<h4>instagram</h4>
-				</li>
-			</ul>
-		</div><!-- /.service -->
-		<div class="staff">
-			<h3>ゲーム（PC上でしかできません。）</h3>
-			<ul>
-				<li>
-				<a href="https://wakaba1226pkmn.github.io/test/"><img src="images/test_game.png" alt=""></a>
-				<h4>バスケット</h4>
-				<p>3✖︎3のマス目をクリックして移動し、りんごを集め爆弾を避けながらスコアを稼ぐ。</p>
-				</li>
-
-			</ul>
-		</div><!-- /.staff -->
 	</div><!-- /#main -->
 </div><!-- /#contents -->
 
@@ -126,7 +60,7 @@ $(function($){
 		<ul>
 			<li><a href="index.html">HOME</a></li>
 			<li><a href="http://www.mclab.ics.ritsumei.ac.jp">LABORATORY</a></li>
-			<li><a href="dairy.html">DIARY</a></li>
+			<li><a href="diary.html">DIARY</a></li>
 		</ul>
 	</div><!-- /.footmenu -->
 	<div class="copyright">Copyright &#169; 2019 - 2019 SITENAME All Rights Reserved.</div><!-- /.copyright -->
