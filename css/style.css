@@ -1,12 +1,18 @@
 /*================================================
+基本情報
+================================================*/
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+/*================================================
 ヘッダー
 ================================================*/
-.header_menu {
+.header_menu{
 	width: 100%;
 	padding: 10px 0px;
 	overflow: hidden;
 	background: black;
     border-radius: 10px;
+    font-family: 'Sacramento', cursive;
 }
 
 .header_menu img{
@@ -28,7 +34,7 @@
 	float: left;
 	list-style: none;
 	margin: 0;
-	padding: 5px 20px 0px 20px;
+	padding: 15px 20px 0px 20px;
 	font-size: 24px;
 	text-align: center;
     color: white;
@@ -51,6 +57,9 @@
     color: black;
 }
 
+/*================================================
+更新情報
+================================================*/
 .update_info h2{
     background-color: black;
     color: white;
@@ -58,7 +67,10 @@
     border-radius: 10px;
 }
 
-.study_book {
+/*================================================
+本棚
+================================================*/
+.study_book{
 	overflow:hidden;
 }
 
@@ -69,24 +81,24 @@
     border-radius: 10px;
 }
 
-.study_book ul {
+.study_book ul{
 	overflow:hidden;
     padding: 10px 0 0 30px;
 }
-.study_book li {
+.study_book li{
 	list-style:none;
 	float:left;
 	width:230px;
 }
-.study_book li:nth-child(10n+1) {
+.study_book li:nth-child(10n+1){
 	clear:both;
 }
-.study_book li img {
+.study_book li img{
 	width: 200px;
     height: 280px;
 }
 
-.link {
+.link{
 	overflow:hidden;
 }
 
@@ -97,19 +109,23 @@
     border-radius: 10px;
 }
 
-.link ul {
+/*================================================
+リンク
+================================================*/
+.link ul{
 	overflow:hidden;
     padding: 10px 0 0 30px;
+    font-family: 'Sacramento', cursive;
 }
-.link li {
+.link li{
 	list-style:none;
 	float:left;
 	width:230px;
 }
-.link li:nth-child(10n+1) {
+.link li:nth-child(10n+1){
 	clear:both;
 }
-.link li img {
+.link li img{
 	width: 200px;
     height: 200px;
 }
@@ -130,13 +146,14 @@
     color: gray;
     text-align: center;
     border-radius: 10px;
+    font-family: 'Sacramento', cursive;
 }
 
 /*================================================
 スマホ用
 ================================================*/
 @media screen and (max-width:600px){
-    .header_menu {
+    .header_menu{
 	   padding: 1vw 0px;
     }
 
@@ -150,23 +167,33 @@
         font-size: 2.4vw;
 	}
 
+    .main_info{
+        font-size: 1.2vw;
+    }
+    
+    .update_info ul{
+        font-size: 2.4vw;
+    }
+    
     .update_info h2{
-        padding: 0 0 0 1cw;
+        padding: 0 0 0 1vw;
+        font-size: 2.4vw;
     }
 
     .study_book h2{
         padding: 0 0 0 1vw;
+        font-size: 2.4vw;
     }
 
-    .study_book ul {
+    .study_book ul{
         padding: 1vw 0 0 3vw;
     }
     
-    .study_book li {
+    .study_book li{
         width:23vw;
     }
 
-    .study_book li img {
+    .study_book li img{
         width: 20vw;
         height: 28vw;
     }
@@ -175,17 +202,23 @@
 
     .link h2{
         padding: 0 0 0 1vw;
+        font-size: 2.4vw;
     }
 
-    .link ul {
+    .link ul{
         padding: 1vw 0 0 3vw;
+        font-size: 2.4vw;
     }
-    .link li {
-    width:23vw;
+    .link li{
+        width:23vw;
     }
 
-    .link li img {
-	   width: 20vw;
+    .link li img{
+        width: 20vw;
         height: 20vw;
+    }
+    
+    .footer_menu{
+        font-size: 2.4vw;
     }
 }
