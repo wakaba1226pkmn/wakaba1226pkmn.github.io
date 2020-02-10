@@ -7,18 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="わかばのマイページ">
         <meta name="keywords" content="わかばのマイページ,勉強中,大学生,社会人,プログラミング">
-        <link rel="stylesheet" href="css/slide.css">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/openclose.js"></script>
     </head>
 
     <body>
+
         <!--小さな端末用（480px以下端末）ブロック-->
         <div id="sh">
-            
+
             <!--小さな端末用ロゴ-->
             <p id="logo"><a href="index.html"><img src="images/logo_s.png" alt="SAMPLE LOGO"></a></p>
-            
+
             <!--小さな端末用メニュー-->
             <nav id="menubar-s">
                 <ul>
@@ -29,62 +29,56 @@
                     <li><a href="link.html">LINK</a></li>
                 </ul>
             </nav>
+
         </div>
         <!--/sh-->
-        
+
         <div id="container">
+
             <div id="main">
-                <section class="box">
-                    <aside id="mainimg">
-                        <img src="images/1.jpg" alt="" id="slide1"/>
-                        <img src="images/2.jpg" alt="" id="slide2"/>
-                        <img src="images/3.jpg" alt="" id="slide3"/>
-                    </aside>
-                </section>
-                <!--/box-->
-                
-                <section id="new" class="box">
-                    <h2 id="newinfo_hdr" class="close">更新情報・お知らせ</h2>
-                    <dl id="newinfo">
-                        <dt>2020/02/10</dt>
-                        <dd>スマホ用に調節</dd>
-                        <dt>2020/02/08</dt>
-                        <dd>HP公開</dd>
-                        <dt>2020/02/08</dt>
-                        <dd>HP更新</dd>
-                        <dt>2020/02/05</dt>
-                        <dd>HPスタイル変更</dd>
-                        <dt>2020/10/10</dt>
-                        <dd>部分的に編集</dd>
-                        <dt>2020/08/01</dt>
-                        <dd>GitHub Pages利用開始</dd>
-                    </dl>
+
+                <section>
+
+                    <h2>GALLERY</h2>
+
+                    <section class="list">
+                        <a href="">
+                            <figure><img src="images/book1.jpg" alt=""></figure>
+                            <h4>勉強中</h4>
+                        </a>
+                    </section>
+
+                    <section class="list">
+                        <a href="">
+                            <figure><img src="images/book2.jpg" alt=""></figure>
+                            <h4>勉強中</h4>
+                        </a>
+                    </section>
+
+                    <section class="list">
+                        <a href="">
+                            <figure><img src="images/book3.jpg" alt=""></figure>
+                            <h4>勉強中</h4>
+                        </a>
+                    </section>
+
+                    <section class="list">
+                        <a href="">
+                            <figure><img src="images/book4.jpg" alt=""></figure>
+                            <h4>勉強済</h4>
+                        </a>
+                    </section>
+
                 </section>
 
-                <section class="box">
-                    <h2>わかばのマイページについて</h2>
-                    <h3>説明</h3>
-                    <p>プログラミングの勉強をしながら、メモや日記として更新していこうと考えているWebページになります！</p>
-                    <h3>内容</h3>
-                    <p>・HOME</p>
-                    <p>　現在のページ、トップページ</p>
-                    <p>・DIARY</p>
-                    <p>　日記、メモ</p>
-                    <p>・ABOUT</p>
-                    <p>　プログラミング言語の経験</p>
-                    <p>　様々な履歴</p>
-                    <p>・GALLERY</p>
-                    <p>　勉強した書籍について</p>
-                    <p>・LINK</p>
-                    <p>　SNSなどのリンク</p>
-                </section>
-                <!--/box-->
             </div>
             <!--/main-->
 
             <div id="sub">
+
                 <!--大きな端末用（481px以上端末）ロゴ-->
                 <p id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE LOGO"></a></p>
+
                 <!--大きな端末用（481px以上端末）メニュー-->
                 <nav id="menubar">
                     <ul>
@@ -95,22 +89,17 @@
                         <li><a href="link.html">LINK</a></li>
                     </ul>
                 </nav>
+
             </div>
             <!--/sub-->
+
         </div>
         <!--/container-->
-        
+
         <footer>
             <small>Copyright&copy; <a href="index.html">Sample Site</a> All Rights Reserved.</small>
             <span class="pr"><a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a></span>
         </footer>
-
-        <!--お知らせ欄の開閉処理条件　480px以下-->
-        <script type="text/javascript">
-            if (OCwindowWidth() <= 480) {
-                open_close("newinfo_hdr", "newinfo");
-            }
-        </script>
 
         <!--メニューの３本バー-->
         <div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
